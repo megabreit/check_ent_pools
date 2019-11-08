@@ -15,7 +15,7 @@ const char *program_name = "check_ent_pools";
 const char *copyright = "2014,2019";
 const char *email = "megabreit@googlemail.com";
 const char *name = "Armin Kunaschik";
-const char *version = "1.3";
+const char *version = "1.4";
 
 #include <macros.h>
 #include <string.h>
@@ -1238,7 +1238,7 @@ int main(int argc, char* argv[])
 				);
 	}
 
-	printf("ENT_POOLS %s ent_used=%.2f(%s) ent=%.2f ent_max=%d vcpu_busy=%.2f%% |ent_used=%.2f;ent=%.2f;ent_max=%d;vcpu_busy=%.2f\n",
+	printf("ENT_POOLS %s ent_used=%.2f(%s) ent=%.2f ent_max=%d vcpu_busy=%.2f%% |ent_used=%.2f ent=%.2f ent_max=%d vcpu_busy=%.2f\n",
 			states[ent_pool_state],
 			phys_proc_consumed,
 			states[ent_state],

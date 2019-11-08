@@ -16,7 +16,7 @@ const char *program_name = "check_cpu_pools";
 const char *copyright = "2014,2019";
 const char *email = "megabreit@googlemail.com";
 const char *name = "Armin Kunaschik";
-const char *version = "1.3";
+const char *version = "1.4";
 
 #include <macros.h>
 #include <string.h>
