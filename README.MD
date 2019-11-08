@@ -1,6 +1,6 @@
-## check_ent_pools is a combined monitor for entitlement and pool monitoring
-## check_entitlement monitors just entitlement usage
-## check_pools monitors just pool usage
+### check_ent_pools is a combined monitor for entitlement and pool monitoring
+### check_entitlement monitors just entitlement usage
+### check_pools monitors just pool usage
 
 See INSTALL on how to compile and install the set of monitors!
 See command line option --help for details about all options!
