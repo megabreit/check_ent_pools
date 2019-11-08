@@ -19,10 +19,10 @@ The binaries do not need root permission, all run fine with any unprivileged use
 
 Binaries
 ========
-The included binaries were built on AIX 5.3 TL12 with xlC 8.0.0.26 and were tested
-on AIX 5.3 TL12, AIX 6.1 and AIX 7.1. They are included for convenience, but there
+The included binaries were built on AIX 6.1 TL9 with xlC 12.1.0.21 and were tested
+on AIX 6.1, AIX 7.1 and AIX 7.2. They are included for convenience, but there
 is no guarantee that they work on all AIX systems.
-To compile own binaries please do a "make clean; make"!
+To compile your own binaries please do a "make clean; make"!
 
 Tested compilers
 ================
@@ -39,7 +39,7 @@ gcc 4.8.2 (from perzl.org) was tested on AIX 5.3 TL12, 6.1 TL7 and 7.1 TL2.
 
 Operating systems
 =================
-The monitors will compile and run on AIX 5.3 TL6 or higher, AIX 6.1 and AIX 7.1
+The monitors will compile and run on AIX 5.3 TL6 or higher, AIX 6.1, AIX 7.1 and AIX 7.2
 The perfstat pool API is not present in earlier versions and there are also hardware
 dependencies (see below).
 
@@ -49,7 +49,7 @@ The monitor can be compiled on any AIX hardware which runs a supported AIX versi
 It might be possible, that the monitor won't run because of PowerVM restrictions
 or LPAR settings. See README for details
 
-The monitor will run on Power5 or newer CPUs (tested on Power6 and 7).
+The monitor will run on Power5 or newer CPUs (tested on Power6, 7 and 8).
 
 2 types of LPARs are supported:
 - shared processor LPAR

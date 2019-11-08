@@ -12,10 +12,10 @@
 */
 const char *progname = "check_ent_pools";
 const char *program_name = "check_ent_pools";
-const char *copyright = "2014";
-const char *email = "armink.nagios@gmail.com";
-const char *name = "Armin K";
-const char *version = "1.2";
+const char *copyright = "2014,2019";
+const char *email = "megabreit@googlemail.com";
+const char *name = "Armin Kunaschik";
+const char *version = "1.3";
 
 #include <macros.h>
 #include <string.h>
@@ -1155,7 +1155,7 @@ int main(int argc, char* argv[])
 
 	}
 
-	printf("ENT_POOLS %s ent_used=%.2f(%s) ent=%.2f ent_max=%d vcpu_busy=%.2f%%(%s) pool_id=%d pool_size=%d pool_used=%.2f(%s) pool_free=%.2f(%s) syspool_size=%llu syspool_used=%.2f(%s) syspool_free=%.2f(%s) |ent_used=%.2f;ent=%.2f;ent_max=%d;vcpu_busy=%.2f;pool_id=%d;pool_size=%d;pool_used=%.2f;pool_free=%.2f;syspool_size=%llu;syspool_used=%.2f;syspool_free=%.2f\n",
+	printf("ENT_POOLS %s ent_used=%.2f(%s) ent=%.2f ent_max=%d vcpu_busy=%.2f%%(%s) pool_id=%d pool_size=%d pool_used=%.2f(%s) pool_free=%.2f(%s) syspool_size=%llu syspool_used=%.2f(%s) syspool_free=%.2f(%s) |ent_used=%.2f ent=%.2f ent_max=%d vcpu_busy=%.2f pool_id=%d pool_size=%d pool_used=%.2f pool_free=%.2f syspool_size=%llu syspool_used=%.2f syspool_free=%.2f\n",
 			states[ent_pool_state],
 			phys_proc_consumed,
 			states[ent_state],

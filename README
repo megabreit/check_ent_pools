@@ -8,7 +8,7 @@ See command line option --help for details about all options!
 LPAR prerequisites
 ==================
 
-The monitor runs on Power5/6/7 hardware with shared processor LPARs or
+The monitor runs on Power5/6/7/8/9 hardware with shared processor LPARs or
 dedicated donating LPARs.
 
 $ lparstat -i|grep -E "Type|Mode"
@@ -158,8 +158,8 @@ Example for check_ent_pools:
 
 ENT_POOLS OK ent_used=0.43(OK) ent=0.50 ent_max=2 vcpu_busy=21.45%(OK) pool_id=11 pool_size=9 \
 pool_used=1.28(OK) pool_free=7.71(OK) syspool_size=16 syspool_used=3.47(OK) syspool_free=12.53(OK) \
-|ent_used=0.43;ent=0.50;ent_max=2;vcpu_busy=21.45;pool_id=11;pool_size=9;pool_used=1.28;pool_free=7.71;\
-syspool_size=16;syspool_used=3.47;syspool_free=12.53
+|ent_used=0.43 ent=0.50 ent_max=2 vcpu_busy=21.45 pool_id=11 pool_size=9 pool_used=1.28 pool_free=7.71 \
+syspool_size=16 syspool_used=3.47 syspool_free=12.53
 
 ent_used     : used entitlement of the LPAR
 ent          : Entitled capacity of LPAR (lparstat -i|grep "Entitled Capacity" )

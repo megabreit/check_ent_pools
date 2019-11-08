@@ -14,10 +14,10 @@
 */
 const char *progname = "check_entitlement";
 const char *program_name = "check_entitlement";
-const char *copyright = "2014";
-const char *email = "armink.nagios@gmail.com";
-const char *name = "Armin K";
-const char *version = "1.2";
+const char *copyright = "2014,2019";
+const char *email = "megabreit@googlemail.com";
+const char *name = "Armin Kunaschik";
+const char *version = "1.3";
 
 #include <macros.h>
 #include <string.h>
@@ -644,7 +644,7 @@ int main(int argc, char* argv[])
 
 	}
 
-	printf("ENTITLEMENT %s ent_used=%.2f(%s) ent=%.2f ent_max=%d vcpu_busy=%.2f%%(%s) |ent_used=%.2f;ent=%.2f;ent_max=%d,vcpu_busy=%.2f\n",
+	printf("ENTITLEMENT %s ent_used=%.2f(%s) ent=%.2f ent_max=%d vcpu_busy=%.2f%%(%s) |ent_used=%.2f ent=%.2f ent_max=%d vcpu_busy=%.2f\n",
 			states[ent_pool_state],
 			phys_proc_consumed,
 			states[ent_state],
