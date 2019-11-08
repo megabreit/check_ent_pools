@@ -1,0 +1,60 @@
+Makefile
+========
+Since this program is not portable at all, there is no configure script and
+no options.
+
+Edit Makefile and specify the path to your C-compiler!
+Common values are
+CC=/usr/vac/bin/xlc
+or
+CC=gcc
+
+Compile with
+$ make
+
+When you see compiler errors, check the compiler version!
+
+Copy the binaries to your Nagios libexec directory (e.g. /usr/local/nagios/libexec)
+The binaries do not need root permission, all run fine with any unprivileged user.
+
+Binaries
+========
+The included binaries were built on AIX 5.3 TL12 with xlC 8.0.0.26 and were tested
+on AIX 5.3 TL12, AIX 6.1 and AIX 7.1. They are included for convenience, but there
+is no guarantee that they work on all AIX systems.
+To compile own binaries please do a "make clean; make"!
+
+Tested compilers
+================
+IBM xlC 8.0 or newer
+ bos.adt.base and bos.adt.include are dependencies of the compiler
+
+gcc 4.8.2 (from perzl.org) was tested on AIX 5.3 TL12, 6.1 TL7 and 7.1 TL2.
+ Older gcc versions probably work too.
+ Make sure to install an OS-compatible gcc version!
+ If you see compiler errors in system header files (like /usr/include/secattr.h),
+ then you probably installed the wrong gcc version (e.g. gcc for AIX 5.3 on AIX 6.1)
+ It might be necessary to install the system header files from the filesets
+ bos.adt.base and bos.adt.include!
+
+Operating systems
+=================
+The monitors will compile and run on AIX 5.3 TL6 or higher, AIX 6.1 and AIX 7.1
+The perfstat pool API is not present in earlier versions and there are also hardware
+dependencies (see below).
+
+Hardware
+========
+The monitor can be compiled on any AIX hardware which runs a supported AIX version.
+It might be possible, that the monitor won't run because of PowerVM restrictions
+or LPAR settings. See README for details
+
+The monitor will run on Power5 or newer CPUs (tested on Power6 and 7).
+
+2 types of LPARs are supported:
+- shared processor LPAR
+- dedicated donating LPAR (only entitlement monitors)
+
+It is not possible to monitor dedicated or full partition LPARs with this monitor
+because it's no entitlement or pool data available there from the perfstat API.
+
