@@ -174,3 +174,11 @@ the AIX Developer Works forums for answering my stupid questions.
 
 None known at the moment.
 
+## Attention
+
+I don't have direct access to IBM Power systems anymore. This means I cannot check the correct function
+of the monitors on newer operating systems like AIX 7.3 or newer Power platforms like Power10.
+Judging from experience, AIX is and was always very compatible with earlier versions, it is very likely
+that binaries and sources will also work on newer hard- and software.
+
+If this is not the case, please create an issue and I'll do my best to fix it.

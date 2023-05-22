@@ -21,7 +21,8 @@ Binaries
 ========
 The included binaries were built on AIX 6.1 TL9 with xlC 12.1.0.21 and were tested
 on AIX 6.1, AIX 7.1 and AIX 7.2. They are included for convenience, but there
-is no guarantee that they work on all AIX systems.
+is no guarantee that they work on all AIX systems. It is expected that the binaries
+will also work on AIX 7.3.
 To compile your own binaries please do a "make clean; make"!
 
 Tested compilers
@@ -39,7 +40,7 @@ gcc 4.8.2 (from perzl.org) was tested on AIX 5.3 TL12, 6.1 TL7 and 7.1 TL2.
 
 Operating systems
 =================
-The monitors will compile and run on AIX 5.3 TL6 or higher, AIX 6.1, AIX 7.1 and AIX 7.2
+The monitors will compile and run on AIX 5.3 TL6 or higher, AIX 6.1, AIX 7.1 and AIX 7.2.
 The perfstat pool API is not present in earlier versions and there are also hardware
 dependencies (see below).
 
